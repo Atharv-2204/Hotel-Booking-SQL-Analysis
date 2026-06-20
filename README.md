@@ -1,10 +1,10 @@
-# 🏨 Hotel Booking Demand — SQL Analysis
+# Hotel Booking Demand — SQL Analysis
 
 An in-depth SQL analysis of 119,390 hotel bookings using PostgreSQL, uncovering patterns in cancellations, revenue, guest behavior, and seasonal demand across two hotel types.
 
 ---
 
-## 🎯 Project Objective
+## Project Objective
 
 To analyse **3 years of hotel booking data (2015–2017)** and answer key business questions:
 - Why do guests cancel, and which factors predict cancellation risk?
@@ -14,7 +14,7 @@ To analyse **3 years of hotel booking data (2015–2017)** and answer key busine
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 📂 Hotel-Booking-SQL-Analysis/
@@ -32,7 +32,7 @@ To analyse **3 years of hotel booking data (2015–2017)** and answer key busine
 
 ---
 
-## 🗄️ Dataset
+## Dataset
 
 **Source:** Kaggle — [Hotel Booking Demand](https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand)
 
@@ -46,7 +46,7 @@ To analyse **3 years of hotel booking data (2015–2017)** and answer key busine
 
 ---
 
-## 🔑 Key Findings
+## Key Findings
 
 1. **Cancellation rates differ sharply by hotel type** — City Hotel sees a ~41.7% cancellation rate compared to Resort Hotel's ~27.7%, suggesting business travelers cancel more readily than leisure guests.
 2. **Non-refundable deposits paradoxically cancel the most** — bookings with a "Non Refund" deposit type show a 99%+ cancellation rate, a pattern consistent with travel agents pre-booking inventory and cancelling unsold rooms.
@@ -57,7 +57,7 @@ To analyse **3 years of hotel booking data (2015–2017)** and answer key busine
 
 ---
 
-## 🛠️ SQL Skills Demonstrated
+## SQL Skills Demonstrated
 
 | Skill | Where it's used |
 |---|---|
@@ -72,7 +72,7 @@ To analyse **3 years of hotel booking data (2015–2017)** and answer key busine
 
 ---
 
-## 📊 Sample Query — Month-over-Month Revenue Growth
+## Sample Query — Month-over-Month Revenue Growth
 
 ```sql
 WITH monthly_rev AS (
@@ -100,7 +100,7 @@ ORDER BY year, month_num;
 
 ---
 
-## 🚀 How to Run This Project
+## How to Run This Project
 
 1. Install **PostgreSQL** and **pgAdmin 4**
 2. Create a new database: `hotel_analysis`
@@ -111,7 +111,7 @@ ORDER BY year, month_num;
 
 ---
 
-## 💡 What I Learned
+## What I Learned
 
 - How to debug a real chronological-sorting bug (text month names sorting alphabetically instead of by calendar order) using `TO_DATE()`
 - The difference between using a column alias vs. repeating the aggregate function in `HAVING` — a PostgreSQL-specific SQL standard rule
@@ -121,13 +121,11 @@ ORDER BY year, month_num;
 
 ---
 
-## 🙋 About
+## About
 
-Built by **[Your Name]** as part of a data analyst portfolio project.
+Built by **Atharv Dhole** as part of a data analyst portfolio project.
 
-- 🔗 LinkedIn: [your-linkedin-url]
-- 📧 Email: your@email.com
+- 🔗 LinkedIn: https://www.linkedin.com/in/atharv-dhole/
+- 📧 Email: atharvdhole22@gmail.com
 
 ---
-
-*If you found this useful, please ⭐ star the repository!*
